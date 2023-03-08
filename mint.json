@@ -1,0 +1,61 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "TurboETH - Web3 App Template",
+  "logo": {
+    "dark": "/logo/logo-light.png",
+    "light": "/logo/logo-dark.png"
+  },
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#048667",
+    "light": "#4D9CFF",
+    "dark": "#048667"
+  },
+  "topbarLinks": [
+    {
+      "name": "Github",
+      "url": "https://github.com/turbo-eth/template-web3-app"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Demo Application",
+    "url": "https://www.turboeth.xyz/"
+  },
+  "anchors": [
+    {
+      "name": "Community",
+      "icon": "discord",
+      "url": "https://mintlify.com/community"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Home",
+      "pages": ["introduction", "features", "roadmap"]
+    },
+    {
+      "group": "Setup Guide",
+      "pages": ["getting-started/quick-start", "getting-started/environment", "getting-started/smart-contracts", "getting-started/wagmi"]
+    },
+    {
+      "group": "Modules",
+      "pages": ["module/core-wagmi", "module/erc20-wagmi", "module/erc721-wagmi"]
+    },
+    {
+      "group": "Web3",
+      "pages": [ "integration/rainbowkit", "integration/sign-in-with-ethereum","integration/disco", "integration/etherscan", "integration/wish-list" ]
+    },
+    {
+      "group": "Features",
+      "pages": ["features/database","features/design-system"]
+    },
+    {
+      "group": "Additional Resources",
+      "pages": [ "acknowledgements", "sponsors"]
+    }
+  ],
+  "footerSocials": {
+    "discord": "https://discord.gg/MKYh9pg8Yq",
+    "github": "https://github.com/turbo-eth"
+  }
+}
