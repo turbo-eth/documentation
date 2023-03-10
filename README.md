@@ -2,8 +2,6 @@
 
 ### 👩‍💻 Development
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
-
 ```
 npm i -g mintlify
 ```
@@ -27,4 +25,4 @@ You can also preview changes using PRs, which generates a preview link of the do
 
 <hr/>
 
-Copyright 2022 [Kames Geraghty](https://twitter.com/KamesGeraghty)
+Copyright 2022 [Kames Geraghty](https://twitter.com/KamesGeraghty) 
