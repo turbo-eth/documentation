@@ -25,33 +25,33 @@
     {
       "name": "Community",
       "icon": "discord",
-      "url": "https://mintlify.com/community"
+      "url": "https://discord.gg/MKYh9pg8Yq"
     }
   ],
   "navigation": [
     {
       "group": "Home",
-      "pages": ["introduction", "features", "roadmap"]
+      "pages": ["overview", "features","getting-started/quick-start"]
     },
     {
       "group": "Setup Guide",
-      "pages": ["getting-started/quick-start", "getting-started/environment", "getting-started/smart-contracts", "getting-started/wagmi"]
+      "pages": ["getting-started/environment", "getting-started/wagmi-cli"]
+    },
+    {
+      "group": "Features",
+      "pages": ["features/design-system", "features/database"]
+    },
+    {
+      "group": "Web3",
+      "pages": [ "integration/rainbowkit", "integration/sign-in-with-ethereum", "integration/disco", "integration/etherscan", "integration/wish-list" ]
     },
     {
       "group": "Modules",
       "pages": ["module/core-wagmi", "module/erc20-wagmi", "module/erc721-wagmi"]
     },
     {
-      "group": "Web3",
-      "pages": [ "integration/rainbowkit", "integration/sign-in-with-ethereum","integration/disco", "integration/etherscan", "integration/wish-list" ]
-    },
-    {
-      "group": "Features",
-      "pages": ["features/database","features/design-system"]
-    },
-    {
       "group": "Additional Resources",
-      "pages": [ "acknowledgements", "sponsors"]
+      "pages": ["roadmap", "to-do", "acknowledgements", "sponsors"]
     }
   ],
   "footerSocials": {

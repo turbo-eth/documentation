@@ -1,4 +1,55 @@
 ---
-title: "Design System"
+title: "UI"
 description: ""
 ---
+
+The minimal UI design system is built using [Radix](https://www.radix-ui.com/). Learn more at [ui.shadcn.com](https://ui.shadcn.com).
+
+Component primitives are included in the `/components/ui` folder.
+
+<img src="/img/ui.png" />
+
+## Copy & Paste
+
+If you want to quickly build a complex UI we recommend copying and pasting the component primitives as needed.
+
+## UI Component Stack 
+
+Primitives
+
+```typescript
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
+```
+
+### Example
+
+```typescript
+<Popover>
+  <PopoverTrigger>Open</PopoverTrigger>
+  <PopoverContent>Place content for the popover here.</PopoverContent>
+</Popover>
+```
+
+### Web3 Component
+```typescript
+import { WalletAddress, WalletBalance } from '@turbo-eth/core-wagmi'
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
+
+export default function UserDropdown() {
+  return (
+    <Popover>
+        <PopoverTrigger>
+            <WalletAddress />
+        </PopoverTrigger>
+        <PopoverContent>
+            <WalletBalance />
+        </PopoverContent>
+    </Popover>
+  )
+}
+```
+

@@ -2,3 +2,223 @@
 title: "ERC20 WAGMI"
 description: ""
 ---
+
+### 💾 Installation
+
+```sh
+npm install @turbo-eth/erc20-wagmi
+```
+
+```sh
+yarn add @turbo-eth/erc20-wagmi
+```
+
+```sh
+pnpm add @turbo-eth/erc20-wagmi
+```
+
+```sh
+git clone https://github.com/turbo-eth/erc20-wagmi
+```
+
+### 📚 Information
+
+The module exports core ERC20 hooks and components for a React application. 
+
+[WAGMI CLI](https://wagmi.sh/cli/getting-started) (`@wagmi/cli`) is used to auto-generate hooks and other frontend application primitives. Minimal ERC20 components are also included. Components have no initial styling or design.
+
+### ⚡️ Quickstart
+
+Use existing ERC20 components or add ERC20 hooks to easily build new components.
+
+```
+import * as React from 'react';
+import classNames from 'clsx';
+import { ERC20Decimals, ERC20Name, ERC20Symbol, useErc20BalanceOf } from '@turbo-eth/erc20-wagmi'
+
+interface TokenInformationProps {
+ className?: string;
+ address: `0x${string}`;
+}
+
+export const TokenInformation = ({ className, address }: TokenInformationProps) => { 
+ const classes = classNames(className, 'TokenInformation'); 
+  const { address: accountAddress } = useAccount()
+
+  const { data, isError, isLoading } = useErc20BalanceOf({
+    address,
+    args: [ accountAddress ],
+  });
+
+ return(
+  <div className={classes}>
+    <ERC20Name address={address} />
+    <ERC20Symbol address={address} />
+    <ERC20Decimals address={address} />
+    {
+      isError ? null : (
+        <span className={classes}>
+          {formatUnits(data as unknown as bigint, (decimals as number) || 18)}
+        </span>
+      )
+    }
+  </div>
+)}
+
+export default TokenInformation;
+```
+
+## Table of contents
+
+### Components
+
+- [ERC20Allowance](#erc20allowance)
+- [ERC20Balance](#erc20balance)
+- [ERC20Decimals](#erc20decimals)
+- [ERC20Name](#erc20name)
+- [ERC20Symbol](#erc20symbol)
+- [WalletERC20Balance](#walleterc20balance)
+
+### Hooks
+- useErc20
+- useErc20Allowance
+- useErc20ApprovalEvent
+- useErc20Approve
+- useErc20BalanceOf
+- useErc20Decimals
+- useErc20Event
+- useErc20Name
+- useErc20Read
+- useErc20Symbol
+- useErc20TotalSupply
+- useErc20Transfer
+- useErc20TransferEvent
+- useErc20TransferFrom
+- useErc20Write
+- usePrepareErc20Approve
+- usePrepareErc20Transfer
+- usePrepareErc20TransferFrom
+- usePrepareErc20Write
+
+## Functions
+
+### <a id="erc20allowance" name="erc20allowance"></a> ERC20Allowance
+
+▸ **ERC20Allowance**(`«destructured»`): ``null`` \| `Element`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `ERC20AllowanceProps` |
+
+#### Returns
+
+``null`` \| `Element`
+
+#### Defined in
+
+[src/components/ERC20Allowance.tsx:33](https://github.com/turbo-eth/erc20-wagmi/blob/6281396/src/components/ERC20Allowance.tsx#L33)
+
+___
+
+### <a id="erc20balance" name="erc20balance"></a> ERC20Balance
+
+▸ **ERC20Balance**(`«destructured»`): ``null`` \| `Element`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `ERC20BalanceProps` |
+
+#### Returns
+
+``null`` \| `Element`
+
+#### Defined in
+
+[src/components/ERC20Balance.tsx:33](https://github.com/turbo-eth/erc20-wagmi/blob/6281396/src/components/ERC20Balance.tsx#L33)
+
+___
+
+### <a id="erc20decimals" name="erc20decimals"></a> ERC20Decimals
+
+▸ **ERC20Decimals**(`«destructured»`): ``null`` \| `Element`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `ERC20DecimalsProps` |
+
+#### Returns
+
+``null`` \| `Element`
+
+#### Defined in
+
+[src/components/ERC20Decimals.tsx:31](https://github.com/turbo-eth/erc20-wagmi/blob/6281396/src/components/ERC20Decimals.tsx#L31)
+
+___
+
+### <a id="erc20name" name="erc20name"></a> ERC20Name
+
+▸ **ERC20Name**(`«destructured»`): ``null`` \| `Element`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `ERC20NameProps` |
+
+#### Returns
+
+``null`` \| `Element`
+
+#### Defined in
+
+[src/components/ERC20Name.tsx:31](https://github.com/turbo-eth/erc20-wagmi/blob/6281396/src/components/ERC20Name.tsx#L31)
+
+___
+
+### <a id="erc20symbol" name="erc20symbol"></a> ERC20Symbol
+
+▸ **ERC20Symbol**(`«destructured»`): ``null`` \| `Element`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `ERC20SymbolProps` |
+
+#### Returns
+
+``null`` \| `Element`
+
+#### Defined in
+
+[src/components/ERC20Symbol.tsx:29](https://github.com/turbo-eth/erc20-wagmi/blob/6281396/src/components/ERC20Symbol.tsx#L29)
+
+___
+
+### <a id="walleterc20balance" name="walleterc20balance"></a> WalletERC20Balance
+
+▸ **WalletERC20Balance**(`«destructured»`): ``null`` \| `Element`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `WalletERC20BalanceProps` |
+
+#### Returns
+
+``null`` \| `Element`
+
+#### Defined in
+
+[src/components/WalletERC20Balance.tsx:15](https://github.com/turbo-eth/erc20-wagmi/blob/6281396/src/components/WalletERC20Balance.tsx#L15)
+
+___
+
