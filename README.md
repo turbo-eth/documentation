@@ -1,4 +1,4 @@
-# TurboETh Documentation
+# TurboEth Documentation
 
 ### 👩‍💻 Development
 
