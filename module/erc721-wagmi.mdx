@@ -2,3 +2,217 @@
 title: "ERC721 WAGMI"
 description: ""
 ---
+
+
+### 💾 Installation
+
+```sh
+npm install @turbo-eth/erc721-wagmi
+```
+
+```sh
+yarn add @turbo-eth/erc721-wagmi
+```
+
+```sh
+pnpm add @turbo-eth/erc721-wagmi
+```
+
+```sh
+git clone https://github.com/turbo-eth/erc721-wagmi
+```
+
+### 📚 Information
+
+The module exports core ERC721 hooks and components for a React application. 
+
+[WAGMI CLI](https://wagmi.sh/cli/getting-started) (`@wagmi/cli`) is used to auto-generate hooks and other frontend application primitives. Minimal ERC721 components are also included. Components have no initial styling or design.
+
+### ⚡️ Quickstart
+
+Use existing ERC721 components or add ERC721 hooks to easily build new components.
+
+### ABI
+
+- [erc721ABI](modules.md#erc721abi)
+
+### Components
+- [ERC721OwnerOf](modules.md#erc721ownerof)
+- [ERC721TokenDescription](modules.md#erc721tokendescription)
+- [ERC721TokenImage](modules.md#erc721tokenimage)
+- [ERC721TokenName](modules.md#erc721tokenname)
+- [ERC721TokenURI](modules.md#erc721tokenuri)
+- [ERC721TotalSupply](modules.md#erc721totalsupply)
+
+### Hooks
+- useERC721Metadata
+- useErc721
+- useErc721ApprovalEvent
+- useErc721ApprovalForAllEvent
+- useErc721Approve
+- useErc721BalanceOf
+- useErc721Event
+- useErc721GetApproved
+- useErc721IsApprovedForAll
+- useErc721Name
+- useErc721OwnerOf
+- useErc721Read
+- useErc721SafeTransferFrom
+- useErc721SetApprovalForAll
+- useErc721Symbol
+- useErc721TokenByIndex
+- useErc721TokenUri
+- useErc721TotalSupply
+- useErc721TransferEvent
+- useErc721TransferFrom
+- useErc721Write
+- usePrepareErc721Approve
+- usePrepareErc721SafeTransferFrom
+- usePrepareErc721SetApprovalForAll
+- usePrepareErc721TransferFrom
+- usePrepareErc721Write
+
+
+## Components
+
+### <a id="erc721ownerof" name="erc721ownerof"></a> ERC721OwnerOf
+
+▸ **ERC721OwnerOf**(`«destructured»`): ``null`` \| `Element`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `ERC721OwnerOfProps` |
+
+#### Returns
+
+``null`` \| `Element`
+
+#### Defined in
+
+src/components/erc721-ownerOf.tsx:33
+
+___
+
+### <a id="erc721tokendescription" name="erc721tokendescription"></a> ERC721TokenDescription
+
+▸ **ERC721TokenDescription**(`«destructured»`): ``null`` \| `Element`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `ERC721TokenDescriptionProps` |
+
+#### Returns
+
+``null`` \| `Element`
+
+#### Defined in
+
+src/components/erc721-tokenUri-description.tsx:30
+
+___
+
+### <a id="erc721tokenimage" name="erc721tokenimage"></a> ERC721TokenImage
+
+▸ **ERC721TokenImage**(`«destructured»`): ``null`` \| `Element`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `ERC721TokenImageProps` |
+
+#### Returns
+
+``null`` \| `Element`
+
+#### Defined in
+
+src/components/erc721-tokenUri-image.tsx:14
+
+___
+
+### <a id="erc721tokenname" name="erc721tokenname"></a> ERC721TokenName
+
+▸ **ERC721TokenName**(`«destructured»`): ``null`` \| `Element`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `ERC721TokenNameProps` |
+
+#### Returns
+
+``null`` \| `Element`
+
+#### Defined in
+
+src/components/erc721-tokenUri-name.tsx:10
+
+___
+
+### <a id="erc721tokenuri" name="erc721tokenuri"></a> ERC721TokenURI
+
+▸ **ERC721TokenURI**(`«destructured»`): ``null`` \| `Element`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `ERC721TokenURIProps` |
+
+#### Returns
+
+``null`` \| `Element`
+
+#### Defined in
+
+src/components/erc721-tokenURI.tsx:10
+
+___
+
+### <a id="erc721totalsupply" name="erc721totalsupply"></a> ERC721TotalSupply
+
+▸ **ERC721TotalSupply**(`«destructured»`): ``null`` \| `Element`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `ERC721TotalSupplyProps` |
+
+#### Returns
+
+``null`` \| `Element`
+
+#### Defined in
+
+src/components/erc721-totalSupply.tsx:31
+
+___
+
+### <a id="useerc721metadata" name="useerc721metadata"></a> useERC721Metadata
+
+▸ **useERC721Metadata**(`«destructured»`): `ERC721Metadata` \| `undefined`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `«destructured»` | `Object` |
+| › `address` | \`0x${string}\` |
+| › `tokenId` | `BigNumberish` |
+
+#### Returns
+
+`ERC721Metadata` \| `undefined`
+
+#### Defined in
+
+src/useERC721Metadata.ts:16
+
+___

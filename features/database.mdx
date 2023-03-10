@@ -5,6 +5,10 @@ description: ""
 
 TurboETH includes support for [`prisma`](https://prisma.io) to automatically backend database bindings.
 
+### Quickly Create New Datbase
+- [MongoDB](https://www.mongodb.com/cloud/atlas) - NoSQL
+- [PlantScale](https://planetscale.com/) - MySQL
+
 # Quick Start
 
 1. Set the DATABASE_URL in the .env file to point to your existing database. If your database has no tables yet, read https://pris.ly/d/getting-started
@@ -18,16 +22,35 @@ TurboETH includes support for [`prisma`](https://prisma.io) to automatically bac
 More information in our documentation:
 https://pris.ly/d/getting-started
 
-# CLI Commands
+# Integration
 
-TurboETH includes commands to directly call core prisma features
-
-#### Init
-```bash
-pnpm prisma:init
-```
+- Schema - `prisma/schema.prisma`
 
 #### Generate
+Run the `generate` command to automatically generat database client with typings
+
+**Only requred** when adding updating the database schema.
+
 ```bash
 pnpm prisma:generate
+```
+
+# Example
+
+```prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String @id @map("_id")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  address   String
+}
 ```

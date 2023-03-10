@@ -5,9 +5,11 @@ description: "Start building Web3 applications today"
 
 
 ## 1-Click Deploy
-TurboETH application templates can be deployed in 1 click using Vercel.
+TurboETH can be deployed in [1-click deployment](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fturbo-eth%2Ftemplate-web3-app&project-name=TurboETH&repository-name=turbo-eth&demo-title=TurboETH&env=APP_ADMINS,NEXT_PUBLIC_ALCHEMY_API_KEY,NEXTAUTH_SECRET,ETHERSCAN_API_KEY,ETHERSCAN_API_KEY_OPTIMISM,ETHERSCAN_API_KEY_ARBITRUM,ETHERSCAN_API_KEY_POLYGON,DATABASE_URL&envDescription=How%20to%20get%20these%20env%20variables%3A&envLink=https%3A%2F%2Fgithub.com%2Fturbo-eth%2Ftemplate-web3-app%2Fblob%2Fmain%2F.env.example) using Vercel.
 
-Visit [TurboEth.xyz](https://www.turboeth.xyz/) to get started
+*Why use 1-click deploy?* Continuis integration (CI) setup.
+
+Add required [Environment Variables](/getting-started/environment) when starting a new project.
 
 ## Command Line Interface
 
@@ -27,14 +29,25 @@ The `pnpm` CLI is the recommended package manager but `npm` and `yarn` should wo
 pnpm install
 ```
 
-#### Development
+### Development Commands
+
 ```bash
 pnpm dev
 ```
 
+```bash
+pnpm lint
+```
+
+### Production Commands
+
 #### Build
 ```bash
-pnpm dev
+pnpm build
+```
+
+```bash
+pnpm start
 ```
 
 # 🏗️ Setup
