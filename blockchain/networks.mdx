@@ -1,0 +1,42 @@
+---
+title: "Connect"
+description: "Connect to multiple blockchain networks"
+---
+
+TurboETH includes support for multiple blockchain networks.
+
+**Configuration:** `/config/networks.ts`
+
+## Setup 
+Popular JSON-RPC blockchain providers like [Alchemy]() and [Infura]() can be automatically enabled by adding their service API keys to environment variables.
+
+- Alchemy - `NEXT_PUBLIC_ALCHEMY_API_KEY`
+- Infura - `NEXT_PUBLIC_INFURA_API_KEY`
+
+The API keys are made public. We recommend whitelisting your domains when deploying to production
+
+## Integration
+Depending on the node environment (NODE_ENV) different networks will be enabled in the application.
+
+You can update the default configurations in the `/config/networks.ts` file.
+
+### Testing
+
+- Sepolia
+- Goerli (42)
+- Optimism Goerli (420)
+- Arbitrum Goerli
+- Hardhat
+
+`export const ETH_CHAINS_TEST = [goerli, sepolia, optimismGoerli, arbitrumGoerli, hardhat]`
+
+### Production
+
+- Mainnet (1)
+- Optimism (10)
+- Arbitrum
+- Polygon
+
+`export const ETH_CHAINS_PROD = [mainnet, optimism, arbitrum, polygon]`
+
+

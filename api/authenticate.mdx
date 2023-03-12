@@ -1,0 +1,33 @@
+---
+title: "Authentication"
+description: "Authenticate an Account using Sign-In with Ethereum"
+---
+
+Visit [www.login.xyz](https://www.login.xyz) to learn more about Sign-In With Ethereum (SIWE)
+
+Essential SIWE APIs are automatically setup during development and production.
+
+**Location:** `/pages/api/siwe`
+
+# Configuration
+When an account authenticates a session between the frontend and backend is created.
+
+We recommend setting a **`NEXTAUTH_SECRET`** when deploying to production.
+
+If `undefined` will default to `UPDATE_TO_complex_password_at_least_32_characters_long`
+
+# Routes
+
+### Nonce - `/api/siwe/nonce`
+Generates a `nonce` for the account authentication message.
+
+### Verify - `/api/siwe/nonce`
+Verifies the signed messaged and initializes a new user session.
+
+If the backend database is enabled the `verify` function will create a record for new users.
+
+### Logout - `/api/siwe/logout`
+Invalidates a current session and clears browser cookies.
+
+### Address - `/api/siwe`
+If active session will return the current users account address.

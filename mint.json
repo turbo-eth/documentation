@@ -34,15 +34,25 @@
       "pages": ["overview", "features","getting-started/quick-start"]
     },
     {
-      "group": "Setup Guide",
-      "pages": ["getting-started/environment", "getting-started/wagmi-cli"]
+      "group": "Getting Started",
+      "pages": ["getting-started/environment", "getting-started/wagmi", "getting-started/wagmi-cli"]
     },
     {
-      "group": "Features",
+      "group": "🔏 API",
+      "pages": [ "api/authenticate"]
+    },
+    {
+      "group": "⛓️ Blockchain",
+      "pages": [
+        "blockchain/networks"
+      ]
+    },
+    {
+      "group": "🛠️ Features",
       "pages": ["features/design-system", "features/database"]
     },
     {
-      "group": "Web3",
+      "group": "Integrations",
       "pages": [ "integration/rainbowkit", "integration/sign-in-with-ethereum", "integration/disco", "integration/etherscan", "integration/wish-list" ]
     },
     {
