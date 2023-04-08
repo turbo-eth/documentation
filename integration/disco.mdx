@@ -13,6 +13,27 @@ Disco is identity simplified and focused on:
 
 # Integration
 
-- API - `pages/api/disco`
-- Actions - `integrations/disco`
-- Components - `integrations/disco/components`
+- Demo: [turboeth.xyz/integration/disco](https://www.turboeth.xyz/integration/disco)
+- Code: [github.com/turbo-eth/template-web3-app/tree/integrations/integrations/disco](https://github.com/turbo-eth/template-web3-app/tree/integrations/integrations/disco)
+
+**Folder Structure:**
+```
+integrations/disco
+├─ actions/
+│  ├─ get-credentials-from-did.ts
+│  ├─ get-profile-from-address-simple.ts
+│  ├─ get-profile-from-address.ts
+├─ components/
+│  ├─ disco-profile-basic.tsx
+│  ├─ disco-profile-credentials.tsx
+├─ hooks/
+│  ├─ use-disco-get-credentials-from-did.ts
+│  ├─ use-disco-get-profile-from-address.ts
+│  ├─ use-disco-get-profile-from-did.ts
+├─ routes/
+│  ├─ route-credentials-from-did.ts
+│  ├─ route-disco-profile-from-address.ts
+│  ├─ route-disco-profile-from-did.ts
+├─ disco-client.ts
+├─ README.md
+```

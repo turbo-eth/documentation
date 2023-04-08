@@ -30,40 +30,26 @@
   ],
   "navigation": [
     {
-      "group": "🏠 Home",
+      "group": "Home",
       "pages": ["overview", "features","getting-started/quick-start"]
     },
     {
-      "group": "📚 Getting Started",
+      "group": "Getting Started",
       "pages": [
         "getting-started/environment", 
-        "getting-started/json-rpc",
+        "getting-started/wagmi", 
         "getting-started/wagmi-cli",
-        "getting-started/design-system", 
-        "getting-started/database",
-        "integration/how-it-works"
+        "blockchain/networks",
+        "features/design-system", 
+        "features/database"
       ]
     },
     {
-      "group": "🧱 Core Integrations",
-      "pages": [ 
-        "integration/rainbowkit",
-        "integration/sign-in-with-ethereum"
+      "group": "Contributing",
+      "pages": [
+        "contributing/integration",
+        "contributing/template"
       ]
-    },
-    {
-      "group": "⛓️ Smart Contract Integrations",
-      "pages": [ 
-        "integration/smart-contract-erc20",
-        "integration/smart-contract-erc721"
-      ]
-    },
-    {
-      "group": "🧰 API Integrations",
-      "pages": [ 
-        "integration/disco", 
-        "integration/etherscan", 
-        "integration/wish-list" ]
     },
     {
       "group": "🔏 API",
@@ -87,24 +73,26 @@
       ]
     },
     {
-      "group": "🎛️ Modules (Beta)",
-      "pages": ["module/core-wagmi",
-      "module/erc20-wagmi",
-      "module/erc721-wagmi"]
-    },
-    {
-      "group": "👷‍♂️ Contributing",
+      "group": "⛓️ Blockchain",
       "pages": [
-        "contributing/integrations",
-        "contributing/templates"
+        "blockchain/networks"
       ]
     },
     {
-      "group": "🏦 Additional Resources",
-      "pages": ["roadmap",
-      "to-do",
-      "acknowledgements",
-      "sponsors"]
+      "group": "🛠️ Features",
+      "pages": ["features/design-system", "features/database"]
+    },
+    {
+      "group": "Integrations",
+      "pages": [ "integration/rainbowkit", "integration/sign-in-with-ethereum", "integration/disco", "integration/etherscan", "integration/wish-list" ]
+    },
+    {
+      "group": "Modules",
+      "pages": ["module/core-wagmi", "module/erc20-wagmi", "module/erc721-wagmi"]
+    },
+    {
+      "group": "Additional Resources",
+      "pages": ["roadmap", "to-do", "acknowledgements", "sponsors"]
     }
   ],
   "footerSocials": {
