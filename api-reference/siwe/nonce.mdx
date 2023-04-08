@@ -1,0 +1,28 @@
+---
+title: "nonce"
+api: "GET https://turboeth.xyz/api/siwe/nonce"
+description: "This endpoint creates a new nonce for SIWE."
+---
+
+### Response
+
+<ResponseField name="nonce" type="string">
+  The nonce field in sign-in with Ethereum is a randomly generated number that is included in a signed transaction to ensure its uniqueness and prevent replay attacks, adding an additional layer of security to the Ethereum transaction process.
+</ResponseField>
+
+<RequestExample>
+
+```bash Example Request
+curl --location --request GET 'https://turboeth.xyz/api/siwe/nonce' \
+--header 'Content-Type: application/json' \
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+Q0T45U02744VbTKiG
+```
+
+</ResponseExample>

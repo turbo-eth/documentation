@@ -39,7 +39,24 @@
     },
     {
       "group": "🔏 API",
-      "pages": [ "api/authenticate"]
+      "pages": [ 
+        {
+          "group": "app",
+          "pages": [
+            "api-reference/app/users"
+          ]
+        },
+        {
+            "group": "siwe",
+            "pages": [
+              "api-reference/authentication",
+              "api-reference/siwe/nonce",
+              "api-reference/siwe/verify",
+              "api-reference/siwe/logout"
+            ]
+        },
+        "api-reference/og"
+      ]
     },
     {
       "group": "⛓️ Blockchain",

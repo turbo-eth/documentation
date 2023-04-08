@@ -1,0 +1,44 @@
+---
+title: "verify"
+api: "POST https://turboeth.xyz/api/siwe/verify"
+description: "This endpoint creates a new user"
+---
+
+### Body
+
+<ParamField body="message" type="string">
+  The original Sign-In with Ethereum message presented to the user.
+</ParamField>
+
+<ParamField body="signature" type="string">
+  The signature obtained by asking the user to sign the Sign-In with Ethereum message.
+</ParamField>
+
+### Response
+
+<ResponseField name="ok" type="boolean">
+  Status of the Sign-In with Ethereum message verification and new session status.
+</ResponseField>
+
+<RequestExample>
+
+```bash Example Request
+curl --location --request POST 'https://turboeth.xyz/api/siwe/verify' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "message": ""
+    "signature": ""
+}'
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+{
+  "ok": true,
+}
+```
+
+</ResponseExample>

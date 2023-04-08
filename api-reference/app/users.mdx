@@ -1,0 +1,72 @@
+---
+title: "users"
+api: "GET https://turboeth.xyz/api/app/users"
+description: "Get all of the users in the application."
+---
+
+# Authentication
+Route is restrict to application admins. 
+
+The `APP_ADMINS` are defined in the [environment variable](https://github.com/turbo-eth/template-web3-app/blob/main/.env.example) file.
+
+# Schema
+References the User schema in the `prisma/schema.prisma` file.
+```schema.prisma
+model User {
+  id        String    @id @map("_id")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  address   String
+}
+```
+
+### Response
+
+<ResponseField name="object" type="string">
+  The object type being returned i.e Users.
+</ResponseField>
+
+<ResponseField name="content" type="array">
+
+An array of User objects.
+
+<Expandable title="Toggle object">
+
+<ResponseField name="id" type="string">
+  The ID of the user. By default is the `address` of the User.
+</ResponseField>
+
+<ResponseField name="createdAt" type="DateTime">
+  This is the user group token (userGroupToken or USER_GROUP_TOKEN) that will be
+  used to identify which user group is viewing the dashboard. You should save
+  this on your end to use when rendering an embedded dashboard.
+</ResponseField>
+
+<ResponseField name="updatedAt" type="DateTime">
+  This is the name of the user group provided in the request body.
+</ResponseField>
+
+<ResponseField name="address" type="string">
+  The primary address of the user.
+</ResponseField>
+
+</Expandable>
+
+</ResponseField>
+
+<RequestExample>
+
+```bash Example Request
+curl --location --request GET 'https://turboeth.xyz/api/app/users' \
+--header 'Content-Type: application/json' \
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+Q0T45U02744VbTKiG
+```
+
+</ResponseExample>

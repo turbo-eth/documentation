@@ -1,0 +1,30 @@
+---
+title: "logout"
+api: "GET https://turboeth.xyz/api/siwe/logout"
+description: "This endpoint gets or creates a new user."
+---
+
+### Response
+
+<ResponseField name="success" type="number">
+  Indicates whether the call was successful. 1 if successful, 0 if not.
+</ResponseField>
+
+<RequestExample>
+
+```bash Example Request
+curl --location --request GET 'https://turboeth.xyz/api/siwe/logout' \
+--header 'Content-Type: application/json' \
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+{
+  "ok": true
+}
+```
+
+</ResponseExample>

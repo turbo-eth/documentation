@@ -1,22 +1,33 @@
 ---
-title: "Authentication"
-description: "Example overview page before API endpoints"
+title: "overview"
+description: "Authenticate an Account using Sign-In with Ethereum"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et eros iaculis tortor dapibus cursus. Curabitur quis sapien nec tortor dictum gravida.
+Visit [www.login.xyz](https://www.login.xyz) to learn more about Sign-In With Ethereum (SIWE)
 
-```bash
-'Authorization': 'Token <team_token>'
-```
+Essential SIWE APIs are automatically setup during development and production.
 
-## API Tokens
+**Location:** `/pages/api/siwe`
 
-Nullam convallis mauris at nunc consectetur, ac imperdiet leo rutrum. Maecenas cursus purus a pellentesque blandit. Pellentesque vitae lacinia libero, non mollis metus.
+# Configuration
+When an account authenticates a session between the frontend and backend is created.
 
-Nam id ullamcorper urna, at rutrum enim. [Maecenas vulputate](/introduction) vehicula libero, vitae sodales augue pretium nec. Quisque a magna tempor, semper risus vel, fermentum nunc. Pellentesque fermentum interdum ex, eu convallis massa blandit sed. Aliquam bibendum ipsum vel laoreet auctor.
+We recommend setting a **`NEXTAUTH_SECRET`** when deploying to production.
 
-### Permissions
+If `undefined` will default to `UPDATE_TO_complex_password_at_least_32_characters_long`
 
-Etiam lobortis ut odio ut fermentum. Nunc odio velit, sollicitudin at consectetur id, tristique eget turpis. Aliquam at risus vitae dolor sodales venenatis. In hac habitasse platea dictumst.
+# Routes
 
-Aenean consequat diam eget mollis fermentum. [Quisque eu malesuada](/introduction) felis, non dignissim libero.
+### Nonce - `/api/siwe/nonce`
+Generates a `nonce` for the account authentication message.
+
+### Verify - `/api/siwe/nonce`
+Verifies the signed messaged and initializes a new user session.
+
+If the backend database is enabled the `verify` function will create a record for new users.
+
+### Logout - `/api/siwe/logout`
+Invalidates a current session and clears browser cookies.
+
+### Address - `/api/siwe`
+If active session will return the current users account address.
