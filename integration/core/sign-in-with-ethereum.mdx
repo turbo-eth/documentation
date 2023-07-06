@@ -1,0 +1,33 @@
+---
+title: "🔏 Sign-In With Ethereum"
+description: "Account Authentication"
+---
+
+[Sign-In with Ethereum](https://login.xyz) is a new form of authentication that enables users to control their digital identity with their Ethereum account and ENS profile instead of relying on a traditional intermediary.
+Already used throughout web3, this is an effort to standardize the method with best practices and to make it easier for web2 services to adopt it.
+
+# Integration
+
+- Demo: [turboeth.xyz/integration/sign-in-with-ethereum](https://www.turboeth.xyz/integration/sign-in-with-ethereum)
+- Code: [github.com/turbo-eth/template-web3-app/tree/integrations/integrations/siwe](https://github.com/turbo-eth/template-web3-app/tree/integrations/integrations/siwe)
+
+**Folder Structure:**
+```
+integrations/siwe
+├─ actions/
+│  ├─ siwe-login.ts
+│  ├─ siwe-logout.ts
+│  ├─ siwe-message.ts
+├─ api/
+│  ├─ index.ts
+│  ├─ logout.ts
+│  ├─ nonce.ts
+│  ├─ verify.ts
+├─ components/
+│  ├─ branch-button-login-or-account.tsx
+│  ├─ button-siwe-login.tsx
+│  ├─ button-siwe-logout.tsx
+│  ├─ is-signed-in.tsx
+│  ├─ is-signed-out.tsx
+├─ README.md
+```

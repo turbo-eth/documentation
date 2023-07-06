@@ -1,0 +1,36 @@
+---
+title: "💰 PoolTogether"
+description: "PoolTogether is a prize savings protocol"
+---
+
+[PoolTogether](https://www.pooltogether.com/) is a popular decentralized finance (DeFi) protocol offering no-loss savings games on the Ethereum network. 
+
+Launched in 2019, PoolTogether leverages the power of pooled interest to create a lottery where nobody loses. The protocol's innovative design has been instrumental in introducing a novel financial instrument in the Ethereum DeFi ecosystem, creating a unique blend of savings and chance for users worldwide.
+
+# Integration
+
+- Demo: [turboeth.xyz/integration/pooltogether-v4](https://www.turboeth.xyz/integration/pooltogether-v4)
+- Code: [github.com/turbo-eth/template-web3-app/tree/integrations/integrations/pooltogether-v4](https://github.com/turbo-eth/template-web3-app/tree/integrations/integrations/pooltogether-v4)
+
+**Folder Structure:**
+```
+integrations/pooltogether-v4
+├─ abis/
+│  ├─ yield-source-prize-pool-abi.ts
+│  ├─ yield-source-prize-pool-bytecode.ts
+├─ components/
+│  ├─ form-yield-source-prize-pool-deposit.tsx
+│  ├─ form-yield-source-prize-pool-withdraw.tsx
+├─ generated/
+│  ├─ pooltogether-v4-wagmi.ts
+├─ hooks/
+│  ├─ use-load-contract-from-chain-id.ts
+│  ├─ use-user-balance.ts
+├─ utils/
+│  ├─ constants.ts
+│  ├─ prize-pool-contract-list.ts
+│  ├─ ticket-contract-list.ts
+│  ├─ usdc-contract-list.ts
+├─ README.md
+├─ wagmi.config.ts
+```

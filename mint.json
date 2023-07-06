@@ -31,11 +31,12 @@
   "navigation": [
     {
       "group": "🏠 Home",
-      "pages": ["overview", "features","getting-started/quick-start"]
+      "pages": ["overview", "features","getting-started/quick-start", "bounties"]
     },
     {
       "group": "📚 Getting Started",
       "pages": [
+        "getting-started/cli", 
         "getting-started/environment", 
         "getting-started/json-rpc",
         "getting-started/wagmi-cli",
@@ -47,50 +48,41 @@
     {
       "group": "🧱 Core Integrations",
       "pages": [ 
-        "integration/rainbowkit",
-        "integration/sign-in-with-ethereum"
+        "integration/core/introduction",
+        "integration/core/sign-in-with-ethereum"
       ]
     },
     {
       "group": "⛓️ Smart Contract Integrations",
       "pages": [ 
-        "integration/smart-contract-erc20",
-        "integration/smart-contract-erc721"
+        "integration/smart-contract/introduction",
+        "integration/smart-contract/erc20",
+        "integration/smart-contract/erc721",
+        "integration/smart-contract/pooltogether"
       ]
     },
     {
       "group": "🧰 API Integrations",
       "pages": [ 
-        "integration/disco", 
-        "integration/etherscan", 
-        "integration/wish-list" ]
+        "integration/api/introduction", 
+        "integration/api/disco", 
+        "integration/api/etherscan", 
+        "integration/api/openai" ]
     },
     {
-      "group": "🔏 API",
-      "pages": [ 
-        {
-          "group": "app",
-          "pages": [
-            "api-reference/app/users"
-          ]
-        },
-        {
-            "group": "siwe",
-            "pages": [
-              "api-reference/authentication",
-              "api-reference/siwe/nonce",
-              "api-reference/siwe/verify",
-              "api-reference/siwe/logout"
-            ]
-        },
-        "api-reference/og"
+      "group": "💻 SDK Integrations",
+      "pages": [
+        "integration/sdk/introduction",
+        "integration/sdk/lit-protocol"
       ]
     },
     {
-      "group": "🎛️ Modules (Beta)",
-      "pages": ["module/core-wagmi",
-      "module/erc20-wagmi",
-      "module/erc721-wagmi"]
+      "group": "🔧 Utility Integrations",
+      "pages": [
+        "integration/utility/introduction",
+        "integration/utility/session-keys",
+        "integration/utility/starter"
+      ]
     },
     {
       "group": "👷‍♂️ Contributing",
@@ -102,7 +94,6 @@
     {
       "group": "🏦 Additional Resources",
       "pages": ["roadmap",
-      "to-do",
       "acknowledgements",
       "sponsors"]
     }

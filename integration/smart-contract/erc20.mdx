@@ -1,7 +1,13 @@
 ---
-title: "ERC20"
-description: "ERC20 read, write and wvent hooks + components"
+title: "🪙 ERC20"
+description: "ERC20 read, write and event hooks + components"
 ---
+
+[ERC20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) is a widely adopted fungible token standard in the Ethereum ecosystem. 
+
+Introduced in 2015, the ERC20 standard outlines a set of rules that all Ethereum tokens must adhere to. Being one of the earliest token standards on Ethereum, ERC20 has greatly contributed to the flourishing of the decentralized finance (DeFi) ecosystem, facilitating seamless interaction between various tokens and DeFi protocols.
+
+# Integration
 
 - Demo: [turboeth.xyz/integration/erc20](https://www.turboeth.xyz/integration/erc20)
 - Code: [github.com/turbo-eth/template-web3-app/tree/integrations/integrations/erc20](https://github.com/turbo-eth/template-web3-app/tree/integrations/integrations/erc20)
@@ -15,16 +21,17 @@ integrations/erc20
 │  ├─ erc20-mintable-abi.ts
 │  ├─ erc20-mintable-bytecode.ts
 ├─ components/
-│  ├─ branch-token-minted.tsx
 │  ├─ erc20-deploy.tsx
 │  ├─ erc20-event-mint.tsx
 │  ├─ erc20-event-transfer.tsx
 │  ├─ erc20-read.tsx
+│  ├─ erc20-set-token-storage.tsx
 │  ├─ erc20-write-mint.tsx
 │  ├─ erc20-write-transfer.tsx
 ├─ hooks/
-│  ├─ use-token-storage.ts
-├─ erc20-wagmi.ts
+│  ├─ use-erc20-token-storage.ts
+├─ generated/
+│  ├─ erc20-wagmi.ts
 ├─ wagmi.config.ts
 ├─ README.md
 ```
