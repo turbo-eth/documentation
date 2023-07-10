@@ -49,6 +49,7 @@
       "group": "🧱 Core Integrations",
       "pages": [ 
         "integration/core/introduction",
+        "integration/core/rainbowkit",
         "integration/core/sign-in-with-ethereum"
       ]
     },
