@@ -2,23 +2,28 @@
 title: "Environment Variables"
 description: "Enable Application Features"
 ---
+ 
+If you are using the [TurboETH CLI](/getting-started/cli), it will automatically generate a `.env.local` file for you based on your answers to the CLI prompts. If you are not using the CLI, you can copy the `.env.example` file to `.env.local` and generate the required environment variables.
 
-Copy `.env.example` to `.env.local` and generate the required environment variables.
-
-- NEXTAUTH_SECRET - Required for Sign-In With Ethereum and session management.
 
 ```bash
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Public
+# Public Variables
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Public Provider(s) - Useful for testing
+NEXT_PUBLIC_USE_PUBLIC_PROVIDER=true
+
 # Alchemy: https://www.alchemy.com
 NEXT_PUBLIC_ALCHEMY_API_KEY=
 
 # Infura: https://www.infura.io
 NEXT_PUBLIC_INFURA_API_KEY=
 
+# Enables the use of production networks in the development environment
+NEXT_PUBLIC_PROD_NETWORKS_DEV=false 
+
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Private
+# Private Variables
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # Generate one here: https://generate-secret.vercel.app/32
 NEXTAUTH_SECRET=
@@ -26,10 +31,16 @@ NEXTAUTH_SECRET=
 # Prisma: https://www.prisma.io
 DATABASE_URL=
 
-# Users to be added as admins. Separate with commas.
-# Can access the application database
+# Users to be added as admins. Separate with commas. Can access the application database
 # Example: "0x123,0x456"
 APP_ADMINS=""
+
+# Website URL
+SITE_URL=
+
+# Disco: https://docs.disco.xyz
+# Request API access at https://discoxyz.typeform.com/requestapi
+DISCO_API_KEY=
 
 # Etherscan: https://docs.etherscan.io
 ETHERSCAN_API_KEY=
@@ -37,6 +48,6 @@ ETHERSCAN_API_KEY_OPTIMISM=
 ETHERSCAN_API_KEY_ARBITRUM=
 ETHERSCAN_API_KEY_POLYGON=
 
-# Disco: https://docs.disco.xyz
-DISCO_API_KEY=
+# OpenAI API Key: https://platform.openai.com/account/api-keys
+OPENAI_API_KEY=
 ```

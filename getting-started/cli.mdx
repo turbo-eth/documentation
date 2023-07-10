@@ -1,0 +1,64 @@
+---
+title: "TurboETH CLI"
+description: "Your one-stop tool to kickstart your project with TurboETH"
+---
+
+<img src='/assets/cli/logo.png' />
+
+The TurboETH Command Line Interface (CLI) is the suggested avenue for initiating your journey with TurboETH. The CLI offers a selection of integrations, providers, and networks to help bootstrap your project quickly and effectively.
+
+For a comprehensive understanding of the TurboETH CLI, refer to the [TurboETH CLI GitHub repository](https://github.com/turbo-eth/create-turbo-eth) and the npm package [create-turbo-eth](https://www.npmjs.com/package/create-turbo-eth).
+
+Embark on your TurboETH adventure with the CLI by executing the following command in your terminal:
+```bash
+pnpm create turbo-eth@latest
+```
+
+## Project Name
+Post the command execution, you will be prompted to input a project name. This name will define the directory for your newly created project.
+
+<img src='/assets/cli/app-name.png' />
+
+## Integrations
+Subsequently, you will be asked to select the integrations you desire for your project. Each integration is modular and can be independently added or removed as per your requirements.
+
+<img src='/assets/cli/integrations.png' />
+
+
+## Providers
+Then, the CLI will ask you to pick the providers for your project. The template currently extends support for the following providers:
+
+<img src='/assets/cli/providers.png' />
+
+
+## Environment Variables
+You have the option to configure your environment variables manually (for detailed instructions, visit [here](/getting-started/environment)). Alternatively, the CLI also offers an interactive setup for configuring environment variables during project scaffolding. You can skip configuring specific variables by pressing 'Enter'.
+
+<img src='/assets/cli/env.png' />
+
+
+## Production Networks
+The CLI will prompt you to select the production networks for your project.
+
+<img src='/assets/cli/prod-networks.png' />
+
+## Test Networks
+Following this, the CLI will ask you to choose your preference for testnet networks. If you press 'n', only the testnets from the earlier selected production chains will be added. Selecting 'y' will allow you to pick a different set of testnets.
+
+<img src='/assets/cli/test-networks.png' />
+
+
+## Install Dependencies and Initiate Git Repository
+In the end, the CLI will inquire if you want to install the dependencies and initialize a Git repository. By selecting 'y', the CLI will execute `pnpm install` and `git init` for you.
+
+<img src='/assets/cli/git-install.png' />
+
+## Launch Your Project
+
+Upon the CLI's successful completion of project scaffolding, you can start running it by typing the following commands in your terminal:
+```bash
+cd <project-name>
+pnpm dev
+```
+
+In case you encounter any bugs or have a feature request, kindly open an issue on [GitHub](https://github.com/turbo-eth/create-turbo-eth).

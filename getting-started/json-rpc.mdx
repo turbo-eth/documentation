@@ -3,7 +3,8 @@ title: "JSON-RPC"
 description: "Connect to multiple blockchain networks"
 ---
 
-TurboETH includes support for multiple blockchain networks.
+If you are using the [TurboETH CLI](/getting-started/cli), it will automatically configure the application to connect to the networks and providers you specify. If you are not using the CLI or want to manually configure the application, you can do so by following the instructions below.
+
 
 **Configuration:** `/config/networks.ts`
 
@@ -22,21 +23,35 @@ You can update the default configurations in the `/config/networks.ts` file.
 
 ### Testing
 
-- Sepolia
+- Sepolia (11155111)
 - Goerli (42)
-- Optimism Goerli (420)
-- Arbitrum Goerli
-- Hardhat
+- Polygon Mumbai (80001)
+- Celo Alfajores (44787)
+- Gnosis Chiado (10200)
+- Avalanche Fuji (43113)
+- Hardhat (31337)
 
-`export const ETH_CHAINS_TEST = [goerli, sepolia, optimismGoerli, arbitrumGoerli, hardhat]`
+`export const ETH_CHAINS_TEST = [goerli, sepolia, polygonMumbai, celoAlfajores, gnosisChiado, avalancheFuji, hardhat]`
+
+### Layer 2 Testing
+
+- Base Goerli (84531)
+- Optimism Goerli (420)
+- Arbitrum Goerli (421613)
+
+`export const ETH_CHAINS_L2_TEST = [baseGoerli, optimismGoerli, arbitrumGoerli]
+
 
 ### Production
 
 - Mainnet (1)
 - Optimism (10)
-- Arbitrum
-- Polygon
+- Arbitrum (42161)
+- Polygon (137)
+- Celo (42220)
+- Gnosis (100)
+- Avalanche (43114)
 
-`export const ETH_CHAINS_PROD = [mainnet, optimism, arbitrum, polygon]`
+`export const ETH_CHAINS_PROD = [mainnet, optimism, arbitrum, polygon, celo, gnosis, avalanche]`
 
 

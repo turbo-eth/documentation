@@ -1,0 +1,45 @@
+---
+title: "🖼️ ERC721"
+description: "ERC2721 read, write and wvent hooks + components"
+---
+
+[ERC721](https://ethereum.org/en/developers/docs/standards/tokens/erc-721/) is a prevalent non-fungible token (NFT) standard within the Ethereum ecosystem. 
+
+Introduced in 2018, the ERC721 standard specifies a set of rules that all non-fungible Ethereum tokens must follow. As one of the first non-fungible token standards on Ethereum, ERC721 has played a critical role in the NFT boom, facilitating seamless interaction and trade of unique assets and items across various platforms and marketplaces.
+
+# Integration
+
+- Demo: [turboeth.xyz/integration/erc721](https://www.turboeth.xyz/integration/erc721)
+- Code: [github.com/turbo-eth/template-web3-app/tree/integrations/integrations/erc721](https://github.com/turbo-eth/template-web3-app/tree/integrations/integrations/erc721)
+
+**Folder Structure:**
+```
+integrations/erc721
+├─ abis/
+│  ├─ erc721-abi.ts
+│  ├─ erc721-bytecode.ts
+├─ components/
+│  ├─ erc721-deploy.tsx
+│  ├─ erc721-name.tsx
+│  ├─ erc721-owner-of.tsx
+│  ├─ erc721-read.tsx
+│  ├─ erc721-set-token-storage.tsx
+│  ├─ erc721-symbol.tsx
+│  ├─ erc721-token-uri-description.tsx
+│  ├─ erc721-token-uri-image.tsx
+│  ├─ erc721-token-uri-name.tsx
+│  ├─ erc721-total-supply.tsx
+│  ├─ erc721-write-approve.tsx
+│  ├─ erc721-write-mint.tsx
+│  ├─ erc721-write-transfer.tsx
+├─ generated/
+│  ├─ erc721-wagmi.ts
+├─ hooks/
+│  ├─ use-erc721-metadata.ts
+│  ├─ use-erc721-token-storage.ts
+├─ utils/
+│  ├─ types.ts
+├─ index.ts
+├─ wagmi.config.ts
+├─ README.md
+```

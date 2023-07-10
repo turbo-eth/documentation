@@ -1,5 +1,58 @@
 ---
 title: "🏗️ Integrations"
-description: "Coming Soon"
+description: "A step-by-step tutorial to create new integrations using the Starter TurboETH Integration template"
 ---
 
+Creating a new integration for the TurboETH ecosystem can be an enriching experience. Here's a comprehensive guide to help you make the most of the Starter TurboETH Integration template and streamline the development process.
+
+## Understanding the [Starter TurboETH Integration](/integration/utility/starter)
+The Starter TurboETH Integration is designed to simplify the process of creating new integrations within the TurboETH ecosystem. It provides a structured, intuitive directory and clear guidelines to help developers create robust and scalable integrations, whether they're building complex SDK interactions, simple API integrations, or anything in between.
+
+By utilizing the Starter TurboETH Integration template, developers can ensure they're adhering to TurboETH's best practices and standards, leading to more efficient development and easier collaboration.
+
+## Getting Started
+
+### Step 1: Fork the Integrations Branch
+Start by forking the [integrations branch](https://github.com/turbo-eth/template-web3-app/tree/integrations) of TurboETH. This will create a copy of the branch in your GitHub repository where you can safely make changes.
+
+### Step 1: Copy the Starter Template
+
+Start by copying the entire `/integrations/starter` directory. This will serve as a blueprint for your new integration. The directory already includes a file structure that's optimal for most integrations.
+
+### Step 2: Customize Your Integration Directory
+
+Replace the starter code with your integration code. Make sure you follow the same pattern and structure that's already evident in the `/integrations/starter` directory.
+
+## Developing the Integration
+
+### Step 3: Initialize Your Client
+
+The `client/` directory is designed for any client initialization code that your integration requires. If you're working with a specific module or SDK, initialization should take place here.
+
+### Step 4: Create Your Components
+
+The `components/` directory is where you should create your React components. 'Read' components that display data from a contract and 'write' components that send transactions should be located here.
+
+### Step 5: Manage Your State with Hooks
+
+Inside the `hooks/` directory, you should place your custom React hooks. These hooks can help manage state updates and encapsulate the logic for interacting with Ethereum contracts.
+
+### Step 6: Add Contract's ABI
+
+Your contract's ABI should be placed inside the `abis/` directory. Each ABI should have its own TypeScript file.
+
+### Step 7: Configuring Your Integration with wagmi-cli
+
+The `wagmi.config.ts` file should hold the wagmi-cli configuration for your integration. Settings like the compiler version and optimization can be configured here. 
+
+## Finalizing Your Integration
+
+### Step 8: Update Your Integration's Entry Point
+
+The `index.ts` file serves as the entry point for your integration. It should export all the hooks, components, and utility functions that your integration provides.
+
+### Step 9: Document Your Integration
+
+Finally, ensure that your integration is well-documented. In the `README.md` file, provide a clear explanation of your integration's purpose, usage, and any critical information a new developer or user should know.
+
+By following these steps, you can efficiently create new integrations that are well-organized, easily understood, and effortlessly navigated by other developers and users. Happy coding!
