@@ -74,7 +74,8 @@
       "group": "💻 SDK Integrations",
       "pages": [
         "integration/sdk/introduction",
-        "integration/sdk/lit-protocol"
+        "integration/sdk/lit-protocol",
+        "integration/sdk/connext"
       ]
     },
     {

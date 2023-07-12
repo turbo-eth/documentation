@@ -1,0 +1,45 @@
+---
+title: "🌉 Connext"
+description: "Cross-chain communication"
+---
+
+[Connext](https://www.connext.network/) is a modular protocol for securely passing funds and data between chains. Developers can use Connext to build crosschain apps (xApps) - applications that interact with multiple domains (blockchains and/or rollups) simultaneously.
+
+# Integration
+
+- Demo: [turboeth.xyz/integration/connext](https://www.turboeth.xyz/integration/connext)
+- Code: [github.com/turbo-eth/template-web3-app/tree/integrations/integrations/connext](https://github.com/turbo-eth/template-web3-app/tree/integrations/integrations/connext)
+
+**Folder Structure:**
+```
+integrations/connext
+├─ api/
+│ ├─ latest-transfers.tsx
+│ ├─ estimated-amount.tsx
+│ ├─ estimated-relayer-fee.tsx
+│ ├─ approve-if-needed.tsx
+│ ├─ xcall.tsx
+├─ components/
+│ ├─ form-connext-xtransfer.tsx
+│ ├─ latest-transfers.tsx
+│ ├─ transfer.tsx
+├─ hooks/
+│ ├─ use-latest-transfers.ts
+│ ├─ use-supported-transfer.ts
+│ ├─ use-xcall.ts
+│ ├─ use-approve-if-needed.ts
+│ ├─ use-estimated-relayer-fee.ts
+│ ├─ use-estimated-amount.ts
+├─ utils/
+│ ├─ assets/
+│ │ ├─ index.ts
+│ │ ├─ mainnet.ts
+│ │ ├─ testnet.ts
+│ ├─ chains/
+│ │ ├─ index.ts
+│ │ ├─ mainnet.ts
+│ │ ├─ testnet.ts
+│ ├─ types.ts
+├─ client.ts
+├─ README.md
+```
