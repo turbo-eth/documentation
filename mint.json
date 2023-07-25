@@ -75,7 +75,8 @@
       "pages": [
         "integration/sdk/introduction",
         "integration/sdk/lit-protocol",
-        "integration/sdk/connext"
+        "integration/sdk/connext",
+        "integration/sdk/livepeer"
       ]
     },
     {
