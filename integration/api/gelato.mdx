@@ -1,0 +1,77 @@
+---
+title: "🍦 Gelato"
+description: "Automate Smart Contract Execution"
+---
+
+[Gelato Network](https://gelato.network/) is a prominent automation system on the Ethereum blockchain, encompassing a versatile framework for developers and users.
+
+Gelato Network's mission is to automate smart contract executions on Ethereum, simplifying complex on-chain tasks and operations. It aims to provide a seamless infrastructure that triggers automated transactions based on pre-set conditions. Gelato's tools have become pivotal in creating efficient decentralized applications (dApps) and enabling seamless user experiences within the blockchain space.
+
+# Integration
+
+- Demo: [turboeth.xyz/integration/gelato](https://www.turboeth.xyz/integration/gelato)
+- Code: [github.com/turbo-eth/template-web3-app/tree/integrations/integrations/gelato](https://github.com/turbo-eth/template-web3-app/tree/integrations/integrations/gelato)
+
+**Folder Structure:**
+```
+integrations/gelato/
+├── abis
+├── components
+│   ├── active-task-preview.tsx
+│   ├── active-tasks.tsx
+│   ├── create-task
+│   │   ├── contract-input.tsx
+│   │   ├── create-task.tsx
+│   │   ├── execution-values.tsx
+│   │   ├── function-input.tsx
+│   │   ├── hooks
+│   │   │   └── use-wizard.ts
+│   │   ├── index.ts
+│   │   ├── interval-input.tsx
+│   │   ├── payment-input.tsx
+│   │   ├── resolver-input.tsx
+│   │   ├── restriction-info.tsx
+│   │   └── task-name-input.tsx
+│   ├── errors
+│   │   └── validation-error.tsx
+│   ├── index.tsx
+│   ├── rename-task.tsx
+│   └── task-view
+│       ├── executing-address.tsx
+│       ├── function-data.tsx
+│       ├── index.ts
+│       ├── input-values.tsx
+│       ├── interval-values.tsx
+│       ├── payment-info.tsx
+│       ├── resolver-values.tsx
+│       └── task-view.tsx
+├── graphql
+│   ├── codegen.ts
+│   ├── graphql
+│   │   └── generated
+│   │       ├── gql.ts
+│   │       ├── graphql.ts
+│   │       └── index.ts
+│   └── tasks.graphql
+├── hooks
+│   ├── index.ts
+│   ├── use-abi.ts
+│   ├── use-active-tasks.ts
+│   ├── use-automate-sdk.ts
+│   ├── use-cancel-task.ts
+│   ├── use-is-automate-supported.ts
+│   ├── use-msg-sender.ts
+│   ├── use-new-task.ts
+│   ├── use-rename-task.ts
+│   ├── use-task-resolver.ts
+│   └── use-task.ts
+├── index.ts
+├── README.md
+├── utils
+│   ├── constants.ts
+│   ├── helpers.ts
+│   ├── resolverDecoder.ts
+│   └── types.ts
+├── index.ts
+└── README.md
+```

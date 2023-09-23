@@ -59,7 +59,11 @@
         "integration/smart-contract/introduction",
         "integration/smart-contract/erc20",
         "integration/smart-contract/erc721",
-        "integration/smart-contract/pooltogether"
+        "integration/smart-contract/erc1155",
+        "integration/smart-contract/pooltogether",
+        "integration/smart-contract/aave",
+        "integration/smart-contract/arweave",
+        "integration/smart-contract/lens-protocol"
       ]
     },
     {
@@ -68,7 +72,13 @@
         "integration/api/introduction", 
         "integration/api/disco", 
         "integration/api/etherscan", 
-        "integration/api/openai" ]
+        "integration/api/openai",
+        "integration/api/gelato",
+        "integration/api/moralis",
+        "integration/api/gitcoin-passport",
+        "integration/api/defi-llama"
+        
+      ]
     },
     {
       "group": "💻 SDK Integrations",
@@ -76,7 +86,8 @@
         "integration/sdk/introduction",
         "integration/sdk/lit-protocol",
         "integration/sdk/connext",
-        "integration/sdk/livepeer"
+        "integration/sdk/livepeer",
+        "integration/sdk/push-protocol"
       ]
     },
     {

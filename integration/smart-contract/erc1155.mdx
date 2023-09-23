@@ -1,0 +1,52 @@
+---
+title: "🖼️ ERC1155"
+description: "ERC1155 read, write and event hooks + components"
+---
+
+[ERC1155](https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/) is a comprehensive multi-token standard within the Ethereum ecosystem.
+
+It provides a standardized interface for contracts that can simultaneously handle multiple token types. With ERC1155, a single contract can encompass a vast range of tokens, be they purely fungible, non-fungible, or even semi-fungible in nature. This adaptability makes it a powerful tool for developers, allowing for intricate token economies and interactions under a unified contract framework.
+
+# Integration
+
+- Demo: [turboeth.xyz/integration/erc1155](https://www.turboeth.xyz/integration/erc1155)
+- Code: [github.com/turbo-eth/template-web3-app/tree/integrations/integrations/erc1155](https://github.com/turbo-eth/template-web3-app/tree/integrations/integrations/erc1155)
+
+**Folder Structure:**
+```
+integrations/erc1155
+├─ artifacts/
+|  ├─ core/
+│  |  ├─ erc1155-abi.ts
+│  |  ├─ erc1155-bytecode.ts
+|  ├─ test/
+│  |  ├─ erc1155-abi.ts
+│  |  ├─ erc1155-bytecode.ts
+├─ components/
+│  ├─ erc1155-deploy.tsx
+│  ├─ erc1155-name.tsx
+│  ├─ erc1155-owner-of.tsx
+│  ├─ erc1155-read.tsx
+│  ├─ erc1155-set-token-storage.tsx
+│  ├─ erc1155-symbol.tsx
+│  ├─ erc1155-token-uri-description.tsx
+│  ├─ erc1155-token-uri-image.tsx
+│  ├─ erc1155-token-uri-name.tsx
+│  ├─ erc1155-token-uri.tsx
+│  ├─ erc1155-contract-uri.tsx
+│  ├─ erc1155-total-supply.tsx
+│  ├─ erc1155-write-approve.tsx
+│  ├─ erc1155-write-mint.tsx
+│  ├─ erc1155-write-transfer.tsx
+│  ├─ erc1155-write-batch-transfer.tsx
+├─ generated/
+│  ├─ erc1155-wagmi.ts
+├─ hooks/
+│  ├─ use-erc1155-metadata.ts
+│  ├─ use-erc1155-token-storage.ts
+├─ utils/
+│  ├─ types.ts
+├─ index.ts
+├─ wagmi.config.ts
+├─ README.md
+```

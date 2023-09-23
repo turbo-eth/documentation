@@ -1,0 +1,40 @@
+---
+title: "🌎 Gitcoin Passport"
+description: "Take control of your identity"
+---
+
+By collecting “stamps” of validation for your identity and online reputation, you can gain access to the most trustworthy web3 experiences and maximize your ability to benefit from platforms like Gitcoin Grants. The more you verify your identity, the more opportunities you will have to vote and participate across the web3.
+
+# Integration
+
+- Demo: [turboeth.xyz/integration/gitcoin-passport](https://www.turboeth.xyz/integration/gitcoin-passport)
+- Code: [github.com/turbo-eth/template-web3-app/tree/integrations/integrations/gitcoin-passport](https://github.com/turbo-eth/template-web3-app/tree/integrations/integrations/gitcoin-passport)
+
+**Folder Structure:**
+```
+integrations/gitcoin-passport
+├─ api/
+│  ├─ address-score.ts
+│  ├─ address-stamps.ts
+│  ├─ signing-message.ts
+│  ├─ stamps-metadata.ts
+│  ├─ submit-passport.ts
+├─ components/
+│  ├─ list-stamps.tsx
+│  ├─ score-gate.tsx
+│  ├─ stamp-card.tsx
+│  ├─ stamp-gate.tsx
+│  ├─ submit-passport-button.tsx
+├─ hooks/
+│  ├─ use-get-address-stamps.ts
+│  ├─ use-get-score.ts
+│  ├─ use-get-stamps-metadata.ts
+│  ├─ use-submit-passport.ts
+├─ utils/
+│  ├─ config.ts
+│  ├─ data-types.ts
+│  ├─ types.ts
+├─ constants.ts
+├─ types.ts
+├─ README.md
+```

@@ -1,0 +1,61 @@
+---
+title: "🌿 Lens Protocol"
+description: "Social Layer for Web3y"
+---
+
+The [Lens Protocol](https://www.lens.xyz/) is a Web3 social graph on the Polygon Proof-of-Stake blockchain. It is designed to empower creators to own the links between themselves and their community, forming a fully composable, user-owned social graph. The protocol is built from the ground up with modularity in mind, allowing new features and fixes to be added while ensuring immutable user-owned content and social relationships.
+
+
+# Integration
+
+- Demo: [turboeth.xyz/integration/lens-protocol](https://www.turboeth.xyz/integration/lens-protocol)
+- Code: [github.com/turbo-eth/template-web3-app/tree/integrations/integrations/lens-protocol](https://github.com/turbo-eth/template-web3-app/tree/integrations/integrations/lens-protocol)
+
+**Folder Structure:**
+```
+integrations/lens-protocol
+├── components
+│   ├── auth
+│   │   ├── is-user-authenticated.tsx
+│   │   ├── login-button.tsx
+│   │   ├── logout-button.tsx
+│   │   └── not-authenticated-yet.tsx
+│   ├── feed.tsx
+│   ├── load-more-button.tsx
+│   ├── navbar.tsx
+│   ├── profile
+│   │   ├── address-profiles.tsx
+│   │   ├── explore-profiles.tsx
+│   │   ├── follow-unfollow-button.tsx
+│   │   ├── owned-profiles.tsx
+│   │   ├── profile-card.tsx
+│   │   ├── profile-list-modal.tsx
+│   │   ├── profile-publications.tsx
+│   │   ├── profile-revenue.tsx
+│   │   ├── profile-stats.tsx
+│   │   ├── profile.tsx
+│   │   └── search-profiles.tsx
+│   └── publications
+│       ├── actions
+│       │   ├── button.tsx
+│       │   ├── comment.tsx
+│       │   ├── index.tsx
+│       │   ├── like.tsx
+│       │   └── mirror.tsx
+│       ├── commnets.tsx
+│       ├── explore-publications.tsx
+│       ├── publication-actions-and-stats.tsx
+│       ├── publication-card.tsx
+│       ├── publication-revenue.tsx
+│       ├── publication.tsx
+│       ├── search-publications.tsx
+│       └── stats
+│           ├── index.tsx
+│           └── stat.tsx
+├── hooks
+│   └── use-create-profile.ts
+├── lens-provider.ts
+├── utils
+│   └── index.ts
+├── README.md
+```

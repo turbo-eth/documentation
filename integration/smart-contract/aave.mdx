@@ -1,0 +1,43 @@
+---
+title: "👻 Aave"
+description: "Borrow and lend assets seamlessly"
+---
+
+[Aave](https://aave.com/) is a pioneering decentralized finance (DeFi) protocol that provides lending and borrowing services on the Ethereum blockchain.
+
+Established in 2017 originally as ETHLend, Aave has evolved into one of the largest and most influential DeFi platforms in the crypto space. It allows users to lend, borrow, and earn interest on crypto assets in a permissionless and transparent manner. By utilizing innovative features like flash loans and rate-switching, Aave has significantly expanded the possibilities within the DeFi sector. With its emphasis on security, user-centricity, and continual innovation, Aave remains at the forefront of reshaping financial services in a decentralized paradigm.
+
+# Integration
+
+- Demo: [turboeth.xyz/integration/aave](https://www.turboeth.xyz/integration/aave)
+- Code: [github.com/turbo-eth/template-web3-app/tree/integrations/integrations/aave](https://github.com/turbo-eth/template-web3-app/tree/integrations/integrations/aave)
+
+**Folder Structure:**
+```
+integrations/aave
+├── abis
+│ ├── pool-abi.ts
+│ └── ui-pool-data-provider-abi.ts
+├── components
+│ ├── asset-to-borrow-item.tsx
+│ ├── asset-to-supply-item.tsx
+│ ├── borrowed-assets-item.tsx
+│ ├── general-info.tsx
+│ ├── health-factor.tsx
+│ ├── list-assets-to-borrow.tsx
+│ ├── list-assets-to-supply.tsx
+│ ├── list-borrowed-assets.tsx
+│ ├── list-supplied-assets.tsx
+│ ├── spinner.tsx
+│ └── supplied-assets-item.tsx
+├── generated
+│ └── aave-wagmi.ts
+├── hooks
+│ └── use-aave.ts
+├── utils
+│ ├── index.ts
+│ ├── market-config.ts
+│ └── types.ts
+│── wagmi.config.ts
+└── README.md
+```
